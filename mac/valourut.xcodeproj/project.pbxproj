@@ -44,9 +44,6 @@
 		F4476AAD093DD4FB008998C4 /* vstcontrols.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = vstcontrols.cpp; path = ../../../../vstgui.sf/vstgui/vstcontrols.cpp; sourceTree = SOURCE_ROOT; };
 		F4476AAE093DD4FB008998C4 /* vstgui.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = vstgui.cpp; path = ../../../../vstgui.sf/vstgui/vstgui.cpp; sourceTree = SOURCE_ROOT; };
 		F4476B78093DD675008998C4 /* QuickTime.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuickTime.framework; path = /System/Library/Frameworks/QuickTime.framework; sourceTree = "<absolute>"; };
-		F4476B8B093DD81B008998C4 /* bmp00128.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; name = bmp00128.bmp; path = ../adelay/editor/resources/bmp00128.bmp; sourceTree = SOURCE_ROOT; };
-		F4476B8C093DD81B008998C4 /* bmp00129.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; name = bmp00129.bmp; path = ../adelay/editor/resources/bmp00129.bmp; sourceTree = SOURCE_ROOT; };
-		F4476B8D093DD81B008998C4 /* bmp00130.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; name = bmp00130.bmp; path = ../adelay/editor/resources/bmp00130.bmp; sourceTree = SOURCE_ROOT; };
 		F4FF51C40929F9C100DDED7A /* aeffeditor.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = aeffeditor.h; path = ../../../source/vst2.x/aeffeditor.h; sourceTree = SOURCE_ROOT; };
 		F4FF51C50929F9C100DDED7A /* audioeffect.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = audioeffect.cpp; path = ../../../source/vst2.x/audioeffect.cpp; sourceTree = SOURCE_ROOT; };
 		F4FF51C60929F9C100DDED7A /* audioeffect.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = audioeffect.h; path = ../../../source/vst2.x/audioeffect.h; sourceTree = SOURCE_ROOT; };
@@ -101,9 +98,6 @@
 			isa = PBXGroup;
 			children = (
 				F4FF51E50929FB0400DDED7A /* vst2.4Info.plist */,
-				F4476B8B093DD81B008998C4 /* bmp00128.bmp */,
-				F4476B8C093DD81B008998C4 /* bmp00129.bmp */,
-				F4476B8D093DD81B008998C4 /* bmp00130.bmp */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
