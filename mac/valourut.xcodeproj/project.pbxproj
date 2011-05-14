@@ -34,7 +34,7 @@
 			containerPortal = 089C1669FE841209C02AAC07 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = F4FF52210929FBF500DDED7A;
-			remoteInfo = vstxsynth;
+			remoteInfo = valourut;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -54,10 +54,10 @@
 		F4FF51CF0929F9D900DDED7A /* aeffectx.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = aeffectx.h; path = ../../../../pluginterfaces/vst2.x/aeffectx.h; sourceTree = SOURCE_ROOT; };
 		F4FF51D00929F9D900DDED7A /* vstfxstore.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = vstfxstore.h; path = ../../../../pluginterfaces/vst2.x/vstfxstore.h; sourceTree = SOURCE_ROOT; };
 		F4FF51E50929FB0400DDED7A /* vst2.4Info.plist */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.plist.xml; path = vst2.4Info.plist; sourceTree = "<group>"; };
-		F4FF52190929FBDC00DDED7A /* gmnames.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = gmnames.h; path = ../vstxsynth/source/gmnames.h; sourceTree = SOURCE_ROOT; };
-		F4FF521A0929FBDC00DDED7A /* vstxsynth.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = vstxsynth.cpp; path = ../vstxsynth/source/vstxsynth.cpp; sourceTree = SOURCE_ROOT; };
-		F4FF521B0929FBDC00DDED7A /* vstxsynth.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = vstxsynth.h; path = ../vstxsynth/source/vstxsynth.h; sourceTree = SOURCE_ROOT; };
-		F4FF521C0929FBDC00DDED7A /* vstxsynthproc.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = vstxsynthproc.cpp; path = ../vstxsynth/source/vstxsynthproc.cpp; sourceTree = SOURCE_ROOT; };
+		F4FF52190929FBDC00DDED7A /* gmnames.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = gmnames.h; path = ../valourut/source/gmnames.h; sourceTree = SOURCE_ROOT; };
+		F4FF521A0929FBDC00DDED7A /* vstxsynth.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = vstxsynth.cpp; path = ../valourut/source/vstxsynth.cpp; sourceTree = SOURCE_ROOT; };
+		F4FF521B0929FBDC00DDED7A /* vstxsynth.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = vstxsynth.h; path = ../valourut/source/vstxsynth.h; sourceTree = SOURCE_ROOT; };
+		F4FF521C0929FBDC00DDED7A /* vstxsynthproc.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = vstxsynthproc.cpp; path = ../valourut/source/vstxsynthproc.cpp; sourceTree = SOURCE_ROOT; };
 		F4FF52220929FBF500DDED7A /* valourut.vst */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = valourut.vst; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4FF52F5092A312800DDED7A /* minihost-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "minihost-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -173,7 +173,7 @@
 			dependencies = (
 			);
 			name = valourut;
-			productName = vstxsynth;
+			productName = valourut;
 			productReference = F4FF52220929FBF500DDED7A /* valourut.vst */;
 			productType = "com.apple.product-type.bundle";
 		};
@@ -319,7 +319,7 @@
 					ppc,
 					i386,
 				);
-				PRODUCT_NAME = vstxsynth;
+				PRODUCT_NAME = valourut;
 			};
 			name = Release;
 		};
