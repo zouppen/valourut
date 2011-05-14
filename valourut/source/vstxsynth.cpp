@@ -244,21 +244,21 @@ bool VstXSynth::getProgramNameIndexed (VstInt32 category, VstInt32 index, char* 
 //-----------------------------------------------------------------------------------------
 bool VstXSynth::getEffectName (char* name)
 {
-	vst_strncpy (name, "VstXSynth", kVstMaxEffectNameLen);
+	vst_strncpy (name, "Valourut", kVstMaxEffectNameLen);
 	return true;
 }
 
 //-----------------------------------------------------------------------------------------
 bool VstXSynth::getVendorString (char* text)
 {
-	vst_strncpy (text, "Steinberg Media Technologies", kVstMaxVendorStrLen);
+	vst_strncpy (text, "Codegrove Lightning", kVstMaxVendorStrLen);
 	return true;
 }
 
 //-----------------------------------------------------------------------------------------
 bool VstXSynth::getProductString (char* text)
 {
-	vst_strncpy (text, "Vst Test Synth", kVstMaxProductStrLen);
+	vst_strncpy (text, "Valourut", kVstMaxProductStrLen);
 	return true;
 }
 
