@@ -277,8 +277,8 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>4</integer>
-									<integer>1</integer>
+									<integer>18</integer>
+									<integer>17</integer>
 									<integer>0</integer>
 								</array>
 							</array>
@@ -318,7 +318,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>bmp00130.bmp</string>
+								<string>gmnames.h</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -326,17 +326,19 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>bmp00130.bmp</string>
+										<string>gmnames.h</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>ED02AE13137E275B00F0B2D5</string>
+										<string>ED02AE4E137E2A8B00F0B2D5</string>
 										<key>history</key>
 										<array>
 											<string>ED4ABAA4137E26B000F55FB7</string>
 											<string>ED4ABAA5137E26B000F55FB7</string>
 											<string>ED4ABAA6137E26B000F55FB7</string>
-											<string>ED4ABAA8137E26B000F55FB7</string>
+											<string>ED02AE24137E28BA00F0B2D5</string>
+											<string>ED02AE2F137E28E100F0B2D5</string>
+											<string>ED02AE30137E28E100F0B2D5</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -559,7 +561,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CD0528F0623707200166675</string>
 								<key>PBXProjectModuleLabel</key>
-								<string></string>
+								<string>gmnames.h</string>
 								<key>StatusBarVisibility</key>
 								<true/>
 							</dict>
@@ -576,6 +578,8 @@
 							<string>218pt</string>
 						</dict>
 						<dict>
+							<key>BecomeActive</key>
+							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>

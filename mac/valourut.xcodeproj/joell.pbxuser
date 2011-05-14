@@ -32,7 +32,7 @@
 				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
 				PBXFileTableDataSourceColumnWidthsKey = (
 					20,
-					301,
+					738,
 					60,
 					20,
 					48,
@@ -54,6 +54,15 @@
 		};
 		perUserProjectItems = {
 			ED02AE13137E275B00F0B2D5 /* PBXBookmark */ = ED02AE13137E275B00F0B2D5 /* PBXBookmark */;
+			ED02AE24137E28BA00F0B2D5 /* PBXBookmark */ = ED02AE24137E28BA00F0B2D5 /* PBXBookmark */;
+			ED02AE25137E28BA00F0B2D5 /* PBXBookmark */ = ED02AE25137E28BA00F0B2D5 /* PBXBookmark */;
+			ED02AE26137E28BA00F0B2D5 /* PBXTextBookmark */ = ED02AE26137E28BA00F0B2D5 /* PBXTextBookmark */;
+			ED02AE2D137E28E000F0B2D5 /* XCBuildMessageTextBookmark */ = ED02AE2D137E28E000F0B2D5 /* XCBuildMessageTextBookmark */;
+			ED02AE2E137E28E000F0B2D5 /* PBXTextBookmark */ = ED02AE2E137E28E000F0B2D5 /* PBXTextBookmark */;
+			ED02AE2F137E28E100F0B2D5 /* PBXTextBookmark */ = ED02AE2F137E28E100F0B2D5 /* PBXTextBookmark */;
+			ED02AE30137E28E100F0B2D5 /* XCBuildMessageTextBookmark */ = ED02AE30137E28E100F0B2D5 /* XCBuildMessageTextBookmark */;
+			ED02AE31137E28E100F0B2D5 /* PBXTextBookmark */ = ED02AE31137E28E100F0B2D5 /* PBXTextBookmark */;
+			ED02AE4E137E2A8B00F0B2D5 /* PBXTextBookmark */ = ED02AE4E137E2A8B00F0B2D5 /* PBXTextBookmark */;
 			ED4ABAA4137E26B000F55FB7 = ED4ABAA4137E26B000F55FB7 /* PBXTextBookmark */;
 			ED4ABAA5137E26B000F55FB7 = ED4ABAA5137E26B000F55FB7 /* PBXBookmark */;
 			ED4ABAA6137E26B000F55FB7 = ED4ABAA6137E26B000F55FB7 /* PBXBookmark */;
@@ -67,6 +76,82 @@
 	ED02AE13137E275B00F0B2D5 /* PBXBookmark */ = {
 		isa = PBXBookmark;
 		fRef = F4476B8D093DD81B008998C4 /* bmp00130.bmp */;
+	};
+	ED02AE24137E28BA00F0B2D5 /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = F4476B8D093DD81B008998C4 /* bmp00130.bmp */;
+	};
+	ED02AE25137E28BA00F0B2D5 /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = F4FF521A0929FBDC00DDED7A /* vstxsynth.cpp */;
+	};
+	ED02AE26137E28BA00F0B2D5 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = F4FF521A0929FBDC00DDED7A /* vstxsynth.cpp */;
+		name = "vstxsynth.cpp: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 1531;
+		vrLoc = 0;
+	};
+	ED02AE2D137E28E000F0B2D5 /* XCBuildMessageTextBookmark */ = {
+		isa = PBXTextBookmark;
+		comments = "'GmDrumSets' defined but not used";
+		fRef = F4FF52190929FBDC00DDED7A /* gmnames.h */;
+		fallbackIsa = XCBuildMessageTextBookmark;
+		rLen = 1;
+		rLoc = 206;
+		rType = 1;
+	};
+	ED02AE2E137E28E000F0B2D5 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = F4FF52190929FBDC00DDED7A /* gmnames.h */;
+		name = "gmnames.h: 207";
+		rLen = 0;
+		rLoc = 3742;
+		rType = 0;
+		vrLen = 207;
+		vrLoc = 3626;
+	};
+	ED02AE2F137E28E100F0B2D5 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = F4FF521A0929FBDC00DDED7A /* vstxsynth.cpp */;
+		name = "vstxsynth.cpp: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 1531;
+		vrLoc = 0;
+	};
+	ED02AE30137E28E100F0B2D5 /* XCBuildMessageTextBookmark */ = {
+		isa = PBXTextBookmark;
+		comments = "'GmDrumSets' defined but not used";
+		fRef = F4FF52190929FBDC00DDED7A /* gmnames.h */;
+		fallbackIsa = XCBuildMessageTextBookmark;
+		rLen = 1;
+		rLoc = 206;
+		rType = 1;
+	};
+	ED02AE31137E28E100F0B2D5 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = F4FF52190929FBDC00DDED7A /* gmnames.h */;
+		name = "gmnames.h: 207";
+		rLen = 0;
+		rLoc = 3742;
+		rType = 0;
+		vrLen = 518;
+		vrLoc = 3315;
+	};
+	ED02AE4E137E2A8B00F0B2D5 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = F4FF52190929FBDC00DDED7A /* gmnames.h */;
+		name = "gmnames.h: 207";
+		rLen = 0;
+		rLoc = 3742;
+		rType = 0;
+		vrLen = 518;
+		vrLoc = 3315;
 	};
 	ED4ABA76137E1FEE00F55FB7 /* Source Control */ = {
 		isa = PBXSourceControlManager;
@@ -111,6 +196,20 @@
 	F4476C1A093DDA87008998C4 /* all */ = {
 		activeExec = 0;
 	};
+	F4FF52190929FBDC00DDED7A /* gmnames.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {956, 2860}}";
+			sepNavSelRange = "{3742, 0}";
+			sepNavVisRange = "{3315, 518}";
+		};
+	};
+	F4FF521A0929FBDC00DDED7A /* vstxsynth.cpp */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {956, 4979}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 1531}";
+		};
+	};
 	F4FF521B0929FBDC00DDED7A /* vstxsynth.h */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {747, 1703}}";
@@ -118,7 +217,7 @@
 			sepNavVisRange = "{337, 841}";
 		};
 	};
-	F4FF52210929FBF500DDED7A /* vstxsynth */ = {
+	F4FF52210929FBF500DDED7A /* valourut */ = {
 		activeExec = 0;
 	};
 }
