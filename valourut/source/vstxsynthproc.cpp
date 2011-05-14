@@ -51,6 +51,7 @@ void VstXSynth::setBlockSize (VstInt32 blockSize)
 //-----------------------------------------------------------------------------------------
 void VstXSynth::initProcess ()
 {
+	msgArrayLen = 11;
 	int j;
 	
 	lightSocket = socket(PF_INET, SOCK_DGRAM, IPPROTO_UDP);
@@ -184,26 +185,63 @@ VstInt32 VstXSynth::processEvents (VstEvents* ev)
 //-----------------------------------------------------------------------------------------
 void VstXSynth::noteOn (VstInt32 note, VstInt32 velocity, VstInt32 delta)
 {
-	uint8_t light = note - 60 + 32;
 	uint8_t bright = velocity*2;
-
-	setLight(light,bright);
+	setLight(note,bright);
 }
 
 //-----------------------------------------------------------------------------------------
 void VstXSynth::noteOff (VstInt32 note)
 {
-	uint8_t light = note - 60 + 32;
 	uint8_t bright = 0;
-	
-	setLight(light,bright);
+	setLight(note,bright);
 }
 
-void VstXSynth::setLight(uint8_t light, uint8_t bright) {
+void VstXSynth::setLight(VstInt32 note, uint8_t bright) {
+	int r,g,b,h,s,v;
+	uint8_t notes[] = {0,0,1,1,2,3,3,4,4,5,5,6,7,7,8,8,9,10,10,11,11,12,12,13}; // Half note mapping.
+	
+	// Some calculations to find out ranges.
+	int range = note / 24;
+	int octaveNote = (note % 24);
+	
+	uint8_t light = notes[octaveNote] + 32; // Map to whites.
+		
+	v=bright;
+	
+	switch (range) {
+		case 2: // White
+			s=0;
+			h=0;
+			break;
+		case 0: // Yellow
+			s=255;
+			h=40;
+			break;
+		case 1: // Green
+			s=255;
+			h=90;
+			break;
+		case 3: // Purple
+			s=255;
+			h=225;
+			break;
+		case 4: // Red
+			s=255;
+			h=0;
+			break;
+		default:
+			bright = 0; // Out of range.
+			break;
+	}
+		
+	// Colourspace conversion.
+	HSVtoRGB( &r, &g, &b, h, s, v );
+	
+	// Set bytes to array and send it.
 	msgArray[7] = light;
-	msgArray[8] = bright;
-	msgArray[9] = bright;
-	msgArray[10] = bright;
+	msgArray[8] = r;
+	msgArray[9] = g;
+	msgArray[10] = b;
 	
 	int bytes_sent = sendto(lightSocket, msgArray, msgArrayLen, 0,(struct sockaddr*)&sa, sizeof sa);
 	if (bytes_sent < 0) {

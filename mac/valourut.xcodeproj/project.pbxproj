@@ -21,6 +21,7 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		ED02B04D137E8F7200F0B2D5 /* rgb_to_hsv.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ED02B04C137E8F7100F0B2D5 /* rgb_to_hsv.cpp */; };
 		F4FF52270929FC2D00DDED7A /* vstxsynth.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F4FF521A0929FBDC00DDED7A /* vstxsynth.cpp */; };
 		F4FF52280929FC2E00DDED7A /* vstxsynthproc.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F4FF521C0929FBDC00DDED7A /* vstxsynthproc.cpp */; };
 		F4FF52290929FC3000DDED7A /* audioeffect.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F4FF51C50929F9C100DDED7A /* audioeffect.cpp */; };
@@ -40,6 +41,8 @@
 
 /* Begin PBXFileReference section */
 		08EA7FFBFE8413EDC02AAC07 /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = /System/Library/Frameworks/Carbon.framework; sourceTree = "<absolute>"; };
+		ED02B04B137E8F7100F0B2D5 /* rgb_to_hsv.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rgb_to_hsv.h; sourceTree = "<group>"; };
+		ED02B04C137E8F7100F0B2D5 /* rgb_to_hsv.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = rgb_to_hsv.cpp; sourceTree = "<group>"; };
 		F4476AAC093DD4FB008998C4 /* aeffguieditor.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = aeffguieditor.cpp; path = ../../../../vstgui.sf/vstgui/aeffguieditor.cpp; sourceTree = SOURCE_ROOT; };
 		F4476AAD093DD4FB008998C4 /* vstcontrols.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = vstcontrols.cpp; path = ../../../../vstgui.sf/vstgui/vstcontrols.cpp; sourceTree = SOURCE_ROOT; };
 		F4476AAE093DD4FB008998C4 /* vstgui.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = vstgui.cpp; path = ../../../../vstgui.sf/vstgui/vstgui.cpp; sourceTree = SOURCE_ROOT; };
@@ -153,6 +156,8 @@
 				F4FF521A0929FBDC00DDED7A /* vstxsynth.cpp */,
 				F4FF521B0929FBDC00DDED7A /* vstxsynth.h */,
 				F4FF521C0929FBDC00DDED7A /* vstxsynthproc.cpp */,
+				ED02B04B137E8F7100F0B2D5 /* rgb_to_hsv.h */,
+				ED02B04C137E8F7100F0B2D5 /* rgb_to_hsv.cpp */,
 			);
 			name = valourut;
 			sourceTree = "<group>";
@@ -222,6 +227,7 @@
 				F4FF52290929FC3000DDED7A /* audioeffect.cpp in Sources */,
 				F4FF522A0929FC3000DDED7A /* audioeffectx.cpp in Sources */,
 				F4FF522B0929FC3100DDED7A /* vstplugmain.cpp in Sources */,
+				ED02B04D137E8F7200F0B2D5 /* rgb_to_hsv.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

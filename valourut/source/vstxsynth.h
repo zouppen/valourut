@@ -32,6 +32,7 @@
 #include <sys/types.h>
 #include <errno.h>
 #include <arpa/inet.h>
+#include "rgb_to_hsv.h"
 
 //------------------------------------------------------------------------------------------
 enum
@@ -148,7 +149,7 @@ private:
 	void noteOn (VstInt32 note, VstInt32 velocity, VstInt32 delta);
 	void noteOff (VstInt32 note);
 	void fillProgram (VstInt32 channel, VstInt32 prg, MidiProgramName* mpn);
-	void setLight(uint8_t light, uint8_t bright);
+	void setLight(VstInt32 note, uint8_t bright);
 };
 
 #endif
