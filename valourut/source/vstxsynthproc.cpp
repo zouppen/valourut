@@ -3,7 +3,7 @@
 // Version 2.4		$Date: 2006/11/13 09:08:27 $
 //
 // Category     : VST 2.x SDK Samples
-// Filename     : vstxsynthproc.cpp
+// Filename     : vstxlennnnnnnnnnnnnnn.cpp
 // Created by   : Steinberg Media Technologies
 // Description  : Example VstXSynth
 //
@@ -51,6 +51,26 @@ void VstXSynth::setBlockSize (VstInt32 blockSize)
 //-----------------------------------------------------------------------------------------
 void VstXSynth::initProcess ()
 {
+	int j;
+	
+	lightSocket = socket(PF_INET, SOCK_DGRAM, IPPROTO_UDP);
+	if (-1 == lightSocket) /* if socket failed to initialize, exit */
+    {
+		printf("Error Creating Socket");
+		exit(EXIT_FAILURE);
+    }
+	
+	memset(&sa, 0, sizeof sa);
+	sa.sin_family = AF_INET;
+	sa.sin_addr.s_addr = inet_addr("192.168.3.2");
+	sa.sin_port = htons(9909);
+		
+	for (j = 0; j < msgArrayLen; j++) {
+		msgArray[j] = 0;
+	}
+	
+	// Other redundant stuff
+	
 	fPhase1 = fPhase2 = 0.f;
 	fScaler = (float)((double)kWaveSize / 44100.);	// we don't know the sample rate yet
 	noteIsOn = false;
@@ -147,14 +167,14 @@ VstInt32 VstXSynth::processEvents (VstEvents* ev)
 			if (status == 0x80)
 				velocity = 0;	// note off by velocity 0
 			if (!velocity && (note == currentNote))
-				noteOff ();
+				noteOff (note);
 			else
 				noteOn (note, velocity, event->deltaFrames);
 		}
 		else if (status == 0xb0)
 		{
-			if (midiData[1] == 0x7e || midiData[1] == 0x7b)	// all notes off
-				noteOff ();
+			//if (midiData[1] == 0x7e || midiData[1] == 0x7b)	// all notes off
+				// Nothing yet. TODO.
 		}
 		event++;
 	}
@@ -164,15 +184,30 @@ VstInt32 VstXSynth::processEvents (VstEvents* ev)
 //-----------------------------------------------------------------------------------------
 void VstXSynth::noteOn (VstInt32 note, VstInt32 velocity, VstInt32 delta)
 {
-	currentNote = note;
-	currentVelocity = velocity;
-	currentDelta = delta;
-	noteIsOn = true;
-	fPhase1 = fPhase2 = 0;
+	uint8_t light = note - 60 + 32;
+	uint8_t bright = velocity*2;
+
+	setLight(light,bright);
 }
 
 //-----------------------------------------------------------------------------------------
-void VstXSynth::noteOff ()
+void VstXSynth::noteOff (VstInt32 note)
 {
-	noteIsOn = false;
+	uint8_t light = note - 60 + 32;
+	uint8_t bright = 0;
+	
+	setLight(light,bright);
+}
+
+void VstXSynth::setLight(uint8_t light, uint8_t bright) {
+	msgArray[7] = light;
+	msgArray[8] = bright;
+	msgArray[9] = bright;
+	msgArray[10] = bright;
+	
+	int bytes_sent = sendto(lightSocket, msgArray, msgArrayLen, 0,(struct sockaddr*)&sa, sizeof sa);
+	if (bytes_sent < 0) {
+		printf("Error sending packet: %s\n", strerror(errno));
+		exit(EXIT_FAILURE);
+	}
 }

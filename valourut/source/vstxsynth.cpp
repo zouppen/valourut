@@ -68,9 +68,13 @@ VstXSynth::VstXSynth (audioMasterCallback audioMaster)
 		isSynth ();
 		setUniqueID ('VxS2');			// <<<! *must* change this!!!!
 	}
-
+	
+	// Bind socket TODO
+	
 	initProcess ();
 	suspend ();
+	
+	// Release socket TODO
 }
 
 //-----------------------------------------------------------------------------------------

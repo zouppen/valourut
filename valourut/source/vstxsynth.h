@@ -24,6 +24,15 @@
 
 #include "public.sdk/source/vst2.x/audioeffectx.h"
 
+// C sockets.
+#include <sys/socket.h>
+#include <netdb.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <sys/types.h>
+#include <errno.h>
+#include <arpa/inet.h>
+
 //------------------------------------------------------------------------------------------
 enum
 {
@@ -112,6 +121,11 @@ public:
 	virtual bool getMidiKeyName (VstInt32 channel, MidiKeyName* keyName);
 
 private:
+	int lightSocket;
+	uint8_t msgArray[11];
+	int msgArrayLen;
+	struct sockaddr_in sa;
+	
 	float fWaveform1;
 	float fFreq1;
 	float fVolume1;
@@ -132,8 +146,9 @@ private:
 
 	void initProcess ();
 	void noteOn (VstInt32 note, VstInt32 velocity, VstInt32 delta);
-	void noteOff ();
+	void noteOff (VstInt32 note);
 	void fillProgram (VstInt32 channel, VstInt32 prg, MidiProgramName* mpn);
+	void setLight(uint8_t light, uint8_t bright);
 };
 
 #endif
